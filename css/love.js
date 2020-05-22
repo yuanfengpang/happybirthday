@@ -60,7 +60,7 @@
         for (var i = 10; i < 30; i += 0.2) {
             t = i / Math.PI;
             x = 16 * Math.pow(Math.sin(t), 3);
-            y = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
+            y = 19 * Math.cos(t) - 8 * Math.cos(2 * t) - 1 * Math.cos(3 * t) - 0*Math.cos(4 * t);
             points.push(new Point(x, y));
         }
         this.points = points;
@@ -169,7 +169,7 @@
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "12px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
-            ctx.fillText(" 林姑娘亲启", 23, 10);
+            ctx.fillText(" To Lin", 23, 10);
             ctx.restore();
         },
         clear: function() {
